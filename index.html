@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="solution.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h2>Bienvenue dans le jeu du Nombre mystère !</h2>
+    <p id="message">Pour commencer, veuillez entrer un nombre entre 0 et 100</p>
+
+    <div id="formulaireTentative">
+        <label>Votre tentative :</label>
+        <input id="nombreUtilisateur" type="number" min="0" max="100"/>
+
+        <input id="btnTentative" type="button" value="Faire une tentative" onclick="Tentative()"/>
+    </div>
+
+    <input id="recommencerPartie" type="button" value="Recommencer une partie" onclick="RecommencerPartie()" hidden>
+</body>
+</html>
